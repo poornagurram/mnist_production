@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mnist-app
+spec:
+  selector:
+    matchLabels:
+      app: mnist-app
+  template:
+    metadata:
+      labels:
+        app: mnist-app
+    spec:
+      containers:
+      - name: mnist-app
+        image: mnist_app
+        imagePullPolicy: Never
+        resources:
+          limits:
+            memory: "2500Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 5000
