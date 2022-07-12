@@ -1,0 +1,5 @@
+SVM - Support Vector Machine
+LR - Logistic Regression
+DT - Decision Tree
+RF - Random Forest
+KNN - K-Nearest Negihbours
